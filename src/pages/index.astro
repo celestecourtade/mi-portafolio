@@ -1,11 +1,1255 @@
 ---
-import Welcome from '../components/Welcome.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+	<Navbar/>
+
+	<section class="showcase">
+		<div class="showcase__container">
+	  
+		  <!-- Columna izquierda -->
+		  <div class="showcase__text">
+			<h1 class="showcase__title">
+			  <span class="showcase__name">Celeste Courtade</span>
+			</h1>
+			<p class="showcase__description">
+			  Soy desarrolladora frontend apasionada por el diseño y la experiencia de usuario.<br />
+			  Me encanta crear interfaces modernas, funcionales y atractivas.
+			</p>
+	  
+			<!-- Botones redes -->
+			<div class="about__links">
+			  <a href="https://linkedin.com" target="_blank" class="about__link about__link--linkedin">🔗 LinkedIn</a>
+			  <a href="/cv.pdf" download class="about__link about__link--cv">📄 Descargar CV</a>
+			  <a href="https://github.com" target="_blank" class="about__link about__link--github">💻 GitHub</a>
+			</div>
+		  </div>
+	  
+		  <!-- Columna derecha -->
+		  <div class="showcase__image-wrapper">
+			<img src="/img/celeste.jpg" alt="Foto de Celeste Courtade" class="showcase__image" />
+		  </div>
+	  
+		</div>
+	  </section>
+
+	  <!-- Sección Tecnologías / Habilidades -->
+<section class="skills-section">
+	<h2 class="section__title">Tecnologías / Habilidades</h2>
+  
+	<ul class="skills-list">
+	  <li class="skill-item">
+		<img src="/icons/html-css.svg" alt="HTML y CSS" class="skill-icon" />
+		<span class="skill-text">HTML/CSS</span>
+	  </li>
+	  <li class="skill-item">
+		<img src="/icons/javascript.svg" alt="JavaScript" class="skill-icon" />
+		<span class="skill-text">JavaScript</span>
+	  </li>
+	  <li class="skill-item">
+		<img src="/icons/astro.svg" alt="Astro" class="skill-icon" />
+		<span class="skill-text">Astro</span>
+	  </li>
+	  <li class="skill-item">
+		<img src="/icons/react.svg" alt="React" class="skill-icon" />
+		<span class="skill-text">React</span>
+	  </li>
+	  <li class="skill-item">
+		<img src="/icons/nestjs.svg" alt="NestJS" class="skill-icon" />
+		<span class="skill-text">NestJS</span>
+	  </li>
+	  <li class="skill-item">
+		<img src="/icons/postgresql.svg" alt="SQL" class="skill-icon" />
+		<span class="skill-text">SQL</span>
+	  </li>
+	  <li class="skill-item">
+		<img src="/icons/prisma.svg" alt="Prisma" class="skill-icon" />
+		<span class="skill-text">Prisma</span>
+	  </li>
+	  <li class="skill-item">
+		<img src="/icons/uxui.svg" alt="Diseño UX/UI" class="skill-icon" />
+		<span class="skill-text">UX/UI</span>
+	  </li>
+	</ul>
+  </section>
+
+  <section class="education-experience-section">
+	<div class="education-experience__container">
+	  
+	  <!-- Educación -->
+	  <div class="education-experience__education">
+		<h2 class="section__title">Educación</h2>
+		<div class="education-item">
+		  <h3 class="education-title">Coderhouse - 2023</h3>
+		  <p class="education-desc">Desarrollo web: HTML, CSS, Git/Github, SASS, Whireframes, Hosting</p>
+		</div>
+		<div class="education-item">
+		  <h3 class="education-title">Agencia de habilidades para el futuro</h3>
+		  <p class="education-desc">Diseño UX/UI - 2024 / Programa Codo a Codo</p>
+		  <p class="education-desc">REACTJS - 2025/ Programa Talento Tech</p>
+		</div>
+		<div class="education-item">
+		  <h3 class="education-title">Universidad Nacional del Oeste - 2025</h3>
+		  <p class="education-desc">Licenciatura en informatica - primer año</p>
+		</div>
+		<div class="education-item">
+		  <h3 class="education-title">Integrar Tec - 2025</h3>
+		  <p class="education-desc">Programación Fullstack</p>
+		</div>
+	  </div>
+  
+	  <!-- Experiencia -->
+	  <div class="education-experience__experience">
+		<h2 class="section__title">Experiencia</h2>
+		<!-- Puedes agregar tus experiencias aquí -->
+		<div class="experience-item">
+			 <h3 class="experience-title">Diseño y maquetación web / 2023 - 2024</h3>
+		  <p class="experience-desc">Diseñadora de interfaces para paginas web y maquetado.</p>
+		</div>
+		<div class="experience-item">
+			<h3 class="experience-title"> Practica UX/UI - 2024</h3>
+			<p class="experience-desc">Diseñe la experiencia de usuario y aplicacion de la app "patitas perdidas" - 2024</p>	 
+		</div>
+		<div class="experience-item">
+			<h3 class="experience-title">Desarrollo web - 2024 </h3>
+		  <p class="experience-desc">Desarrollo de paginas web frontend</p>
+		  </div>
+		  <div class="experience-item">
+			<h3 class="experience-title">Desarrollo de sistemas web fullstack /2025 - Actualidad </h3>
+			<p class="experience-desc"> Desarrolle sistemas de turnos, sistemas de gestion de reservas </p>
+		  </div>
+	  </div>
+
+	</div><section class="projects">
+		<h2 class="projects__title">Mis Proyectos</h2>
+		
+		<div class="projects__grid">
+		  <!-- Project Card 1 -->
+		  <article class="project-card">
+			<img src="/proyectos/proyecto1.jpg" alt="Proyecto 1" class="project-card__image" />
+			<footer class="project-card__footer">
+			  <h3 class="project-card__name">Sistema de turnos para salon de belleza</h3>
+			  <p class="project-card__desc--short">Sistema de turnos para salon de belleza.</p>
+			  <div class="project-card__tech">
+				<img src="/icons/react.svg" alt="React" class="project-card__tech-icon" />
+				<span class="project-card__tech-text">React</span>
+			  </div>
+			</footer>
+			<div class="project-card__overlay">
+			  <p class="project-card__desc--full">
+				Desarrolle y diseñe un sistema de turnos para un salon de belleza, con login, panel de administracion, envio de email por correo.
+			  </p>
+			  <div class="project-card__buttons">
+				<button class="btn btn--demo">Mirar Demo</button>
+				<button class="btn btn--details">Ver más detalles</button>
+			  </div>
+			</div>
+		  </article>
+	  
+		  <!-- Project Card 2 -->
+		  <article class="project-card">
+			<img src="/proyectos/proyecto2.jpg" alt="Proyecto 2" class="project-card__image" />
+			<footer class="project-card__footer">
+			  <h3 class="project-card__name">Movie Kids</h3>
+			  <p class="project-card__desc--short">Proyecto frontend de un sitio web de peliculas infantiles.</p>
+			  <div class="project-card__tech">
+				<img src="/icons/astro.svg" alt="Astro" class="project-card__tech-icon" />
+				<span class="project-card__tech-text">Astro</span>
+			  </div>
+			</footer>
+			<div class="project-card__overlay">
+			  <p class="project-card__desc--full">
+				Diseñe y desarrolle solo la parte frontend de un sitio web , inspirado en plataforma de peliculas para niños.
+			  </p>
+			  <div class="project-card__buttons">
+				<button class="btn btn--demo">Mirar Demo</button>
+				<button class="btn btn--details">Ver más detalles</button>
+			  </div>
+			</div>
+		  </article>
+	  
+		  <!-- Project Card 3 -->
+		  <article class="project-card">
+			<img src="/proyectos/proyecto3.jpg" alt="Proyecto 3" class="project-card__image" />
+			<footer class="project-card__footer">
+			  <h3 class="project-card__name">E-commerce</h3>
+			  <p class="project-card__desc--short">Tienda online con carrito y pagos.</p>
+			  <div class="project-card__tech">
+				<img src="/icons/javascript.svg" alt="JavaScript" class="project-card__tech-icon" />
+				<span class="project-card__tech-text">JavaScript</span>
+			  </div>
+			</footer>
+			<div class="project-card__overlay">
+			  <p class="project-card__desc--full">
+				Tienda online completa con carrito de compras, integración de pagos y panel de administración.
+			  </p>
+			  <div class="project-card__buttons">
+				<button class="btn btn--demo">Mirar Demo</button>
+				<button class="btn btn--details">Ver más detalles</button>
+			  </div>
+			</div>
+		  </article>
+	  
+		  <!-- Project Card 4 -->
+		  <article class="project-card">
+			<img src="/proyectos/proyecto4.jpg" alt="Proyecto 4" class="project-card__image" />
+			<footer class="project-card__footer">
+			  <h3 class="project-card__name">Sistema de gestion para veterinaria</h3>
+			  <p class="project-card__desc--short">Portfolio web con animaciones.</p>
+			  <div class="project-card__tech">
+				<img src="/icons/html-css.svg" alt="HTML y CSS" class="project-card__tech-icon" />
+				<span class="project-card__tech-text">HTML/CSS</span>
+			  </div>
+			</footer>
+			<div class="project-card__overlay">
+			  <p class="project-card__desc--full">
+				Portfolio profesional con animaciones CSS y diseño responsivo, optimizado para mobile y desktop.
+			  </p>
+			  <div class="project-card__buttons">
+				<button class="btn btn--demo">Mirar Demo</button>
+				<button class="btn btn--details">Ver más detalles</button>
+			  </div>
+			</div>
+		  </article>
+	  
+		  <!-- Project Card 5 -->
+		  <article class="project-card">
+			<img src="/proyectos/proyecto5.jpg" alt="Proyecto 5" class="project-card__image" />
+			<footer class="project-card__footer">
+			  <h3 class="project-card__name">Sistema de Stock para Supermercado</h3>
+			  <p class="project-card__desc--short">Dashboard analítico en tiempo real.</p>
+			  <div class="project-card__tech">
+				<img src="/icons/nestjs.svg" alt="NestJS" class="project-card__tech-icon" />
+				<span class="project-card__tech-text">NestJS</span>
+			  </div>
+			</footer>
+			<div class="project-card__overlay">
+			  <p class="project-card__desc--full">
+				Dashboard para monitoreo de datos en tiempo real con gráficos y estadísticas personalizadas.
+			  </p>
+			  <div class="project-card__buttons">
+				<button class="btn btn--demo">Mirar Demo</button>
+				<button class="btn btn--details">Ver más detalles</button>
+			  </div>
+			</div>
+		  </article>
+	  
+		  <!-- Project Card 6 -->
+		  <article class="project-card">
+			<img src="/proyectos/proyecto6.jpg" alt="Proyecto 6" class="project-card__image" />
+			<footer class="project-card__footer">
+			  <h3 class="project-card__name"> Sistema de gestión de pacientes</h3>
+			  <p class="project-card__desc--short">Diseñe </p>
+			  <div class="project-card__tech">
+				<img src="/icons/react.svg" alt="React Native" class="project-card__tech-icon" />
+				<span class="project-card__tech-text">React Native</span>
+			  </div>
+			</footer>
+			<div class="project-card__overlay">
+			  <p class="project-card__desc--full">
+				Aplicación móvil multiplataforma con funcionalidades offline y notificaciones push.
+			  </p>
+			  <div class="project-card__buttons">
+				<button class="btn btn--demo">Mirar Demo</button>
+				<button class="btn btn--details">Ver más detalles</button>
+			  </div>
+			</div>
+		  </article>
+		</div>
+		
+		<button class="btn btn--readmore">Ver mas proyectos</button>
+	  </section>
+  </section>
+
+  <section class="blog">
+	<h2 class="blog__title">Últimos Posts</h2>
+  
+	<div class="blog__grid">
+	  <!-- Blog Card 1 -->
+	  <article class="blog-card">
+		<img src="/blog/post1.jpg" alt="Post 1" class="blog-card__image" />
+		<footer class="blog-card__footer">
+		  <h3 class="blog-card__title">Encuentro con Fundacion Integrar</h3>
+		  <p class="blog-card__summary--short">Tips rápidos para escribir CSS limpio y eficiente.</p>
+		  <div class="blog-card__category">
+			<img src="/icons/css.svg" alt="CSS" class="blog-card__category-icon" />
+			<span class="blog-card__category-text">CSS</span>
+		  </div>
+		</footer>
+		<div class="blog-card__overlay">
+		  <p class="blog-card__summary--full">
+			En este post te contamos cómo organizar mejor tus estilos CSS para que sean mantenibles, con ejemplos y buenas prácticas que aplican a proyectos grandes y chicos.
+		  </p>
+		  <div class="blog-card__buttons">
+			<button class="btn btn--readmore">Leer más</button>
+			<button class="btn btn--share">Compartir</button>
+		  </div>
+		</div>
+	  </article>
+  
+	  <!-- Blog Card 2 -->
+	  <article class="blog-card">
+		<img src="/blog/post2.jpg" alt="Post 2" class="blog-card__image" />
+		<footer class="blog-card__footer">
+		  <h3 class="blog-card__title">Mi paso por Codo a Codo</h3>
+		  <p class="blog-card__summary--short">Mi experiencia trabajando en equipo</p>
+		  <div class="blog-card__category">
+			<img src="/icons/astro.svg" alt="Astro" class="blog-card__category-icon" />
+			<span class="blog-card__category-text">Astro</span>
+		  </div>
+		</footer>
+		<div class="blog-card__overlay">
+		  <p class="blog-card__summary--full">
+			Astro es un framework moderno que te ayuda a construir sitios web rápidos con componentes en React, Vue, Svelte y más. Te mostramos los conceptos clave para arrancar.
+		  </p>
+		  <div class="blog-card__buttons">
+			<button class="btn btn--readmore">Leer más</button>
+			<button class="btn btn--share">Compartir</button>
+		  </div>
+		</div>
+	  </article>
+  
+	  <!-- Blog Card 3 -->
+	  <article class="blog-card">
+		<img src="/blog/post3.jpg" alt="Post 3" class="blog-card__image" />
+		<footer class="blog-card__footer">
+		  <h3 class="blog-card__title">Mi camino por el diseño uxui y el desarrollo web</h3>
+		  <p class="blog-card__summary--short">Conceptos básicos que todo programador debe saber.</p>
+		  <div class="blog-card__category">
+			<img src="/icons/javascript.svg" alt="JavaScript" class="blog-card__category-icon" />
+			<span class="blog-card__category-text">JavaScript</span>
+		  </div>
+		</footer>
+		<div class="blog-card__overlay">
+		  <p class="blog-card__summary--full">
+			Un recorrido por las bases del lenguaje JavaScript, variables, funciones, y estructuras de control para empezar a programar sin miedo.
+		  </p>
+		  <div class="blog-card__buttons">
+			<button class="btn btn--readmore">Leer más</button>
+			<button class="btn btn--share">Compartir</button>
+		  </div>
+		</div>
+	  </article>
+	</div>
+  </section>
+
+  <section class="contact">
+	<h2 class="contact__title">Contáctame</h2>
+	<div class="contact__box">
+	  <!-- Formulario -->
+	  <form class="contact__form" action="#" method="POST">
+		<label for="name" class="contact__label">Nombre</label>
+		<input type="text" id="name" name="name" class="contact__input" placeholder="Tu nombre" required />
+  
+		<label for="email" class="contact__label">Email</label>
+		<input type="email" id="email" name="email" class="contact__input" placeholder="tu@email.com" required />
+  
+		<label for="message" class="contact__label">Mensaje</label>
+		<textarea id="message" name="message" class="contact__textarea" placeholder="Escribe tu mensaje" rows="5" required></textarea>
+  
+		<button type="submit" class="btn btn--send">Enviar</button>
+	  </form>
+  
+	  <!-- Redes sociales -->
+	  <aside class="contact__social">
+		<h3 class="contact__social-title">Mis Redes</h3>
+		<ul class="contact__social-list">
+		  <li>
+			<a href="https://linkedin.com/in/tuusuario" target="_blank" rel="noopener" class="contact__social-link">
+			  <img src="/icons/linkedin.svg" alt="LinkedIn" class="contact__social-icon" />
+			  LinkedIn
+			</a>
+		  </li>
+		  <li>
+			<a href="https://github.com/tuusuario" target="_blank" rel="noopener" class="contact__social-link">
+			  <img src="/icons/github.svg" alt="GitHub" class="contact__social-icon" />
+			  GitHub
+			</a>
+		  </li>
+		</ul>
+	  </aside>
+	</div>
+  </section>
+
+
+  <Footer/>
+
+	
+	  <style>
+	/* Fondo degradado neón */
+	.showcase {
+		background: #1a002b;
+		color: #ffffff;
+		padding: 4rem 2rem;
+		height: 70vh;
+	}
+	
+	/* Contenedor flex responsive */
+	.showcase__container {
+		padding-top: 4rem;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 3rem;
+		max-width: 1200px;
+		margin: 0 auto;
+		flex-wrap: wrap;
+	}
+	
+	/* Columna izquierda */
+	.showcase__text {
+		flex: 1 1 40%;
+		min-width: 280px;
+	}
+	
+	/* Título con nombre en degradado */
+	.showcase__name {
+		font-size: 2.5rem;
+		font-weight: bold;
+		background: linear-gradient(90deg, #8e2de2, #00eaff);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		display: inline-block;
+	}
+	
+	/* Descripción */
+	.showcase__description {
+		font-size: 1rem;
+		line-height: 1.6;
+		margin: 1rem 0 2rem;
+	}
+	
+	/* Botón */
+	.showcase__button {
+		display: inline-block;
+		padding: 0.75rem 1.5rem;
+		font-size: 1rem;
+		background: #00eaff;
+		color: #1a1a1a;
+		text-decoration: none;
+		border-radius: 2rem;
+		font-weight: 600;
+		transition: all 0.3s ease;
+	}
+	
+	.showcase__button:hover {
+		background: #8e2de2;
+		color: #fff;
+	}
+	
+	/* Imagen redonda */
+	.showcase__image-wrapper {
+		flex: 1 1 40%;
+		display: flex;
+		justify-content: center;
+		min-width: 250px;
+	}
+	
+	.showcase__image {
+		width: 15rem;
+		height: 15rem;
+		object-fit: cover;
+		border-radius: 50%;
+		border: 4px solid #fff;
+		box-shadow: 0 0 20px rgba(0, 234, 255, 0.8);
+	}
+
+	/*SOBRE MI */
+
+	/* Links */
+	.about__links {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+	}
+	
+	.about__link {
+		text-decoration: none;
+		padding: 0.75rem 1.5rem;
+		border-radius: 2rem;
+		font-weight: 600;
+		font-size: 1rem;
+		transition: all 0.3s ease;
+		color: #1a1a1a;
+		background: #fff;
+	}
+	
+	.about__link--linkedin:hover {
+		background: #0077b5;
+		color: #fff;
+	}
+	
+	.about__link--cv:hover {
+		background: #ff7f50;
+		color: #fff;
+	}
+	
+	.about__link--github:hover {
+		background: #333;
+		color: #fff;
+	}
+
+	/*SKILS*/
+
+
+  /* Estilos comunes */
+  .section__title {
+	text-align: center;
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+	background: linear-gradient(90deg, #8e2de2, #00eaff);
+	color: rgb(5, 5, 5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Tecnologías */
+  .skills-section {
+    max-width: 100%;
+    padding: 3rem 2rem;
+    box-shadow: 0 0 40px #bf00ff88;
+	background-color: #1a002b;
+	color:#1a002b;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .skills-list {
+	display: flex;
+	justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .skill-item {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(191, 0, 255, 0.15);
+    border-radius: 0.6rem;
+    padding: 0.3rem 0.8rem;
+    gap: 0.6rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #e8d8ff;
+    box-shadow:
+      0 0 6px #ff00f7aa,
+      inset 0 0 4px #bf00ffcc;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    cursor: default;
+    white-space: nowrap;
+	margin: 0.5rem;
+  }
+
+  .skill-item:hover {
+    box-shadow:
+      0 0 15px #ff00f7ee,
+      0 0 25px #5afff6ee,
+      inset 0 0 8px #bf00ffee;
+    transform: translateY(-0.2rem);
+  }
+
+  .skill-icon {
+    width: 1.8rem;
+    height: 1.8rem;
+    filter: drop-shadow(0 0 3px #ff00f7);
+  }
+
+  .skill-text {
+    color: #f0e6ff;
+  }
+
+
+  /* Educación */
+
+  .education-experience-section {
+    max-width: 100%;
+    padding: 2rem 3rem;
+    background: #1a002b;
+    box-shadow: 0 0 20px #bf00ff88;
+    color: #f0e6ff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .education-experience__container {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+  }
+
+  .education-experience__education,
+  .education-experience__experience {
+    flex: 1 1 45%;
+    min-width: 280px;
+  }
+
+  .section__title {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(90deg, #ff00f7, #5afff6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+  }
+
+  .education-item,
+  .experience-item {
+    margin-bottom: 1.25rem;
+    padding: 0.8rem 1rem;
+    background: rgba(191, 0, 255, 0.1);
+    border-radius: 0.7rem;
+    box-shadow:
+      0 0 10px #bf00ff99,
+      inset 0 0 6px #5afff6bb;
+    transition: box-shadow 0.3s ease;
+  }
+
+  .education-item:hover,
+  .experience-item:hover {
+    box-shadow:
+      0 0 20px #ff00f7cc,
+      inset 0 0 10px #5afff6cc;
+  }
+
+  .education-title,
+  .experience-title {
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: #ff00f7;
+    margin-bottom: 0.4rem;
+  }
+
+  .education-desc,
+  .experience-desc {
+    font-size: 1rem;
+    color: #cceeff;
+    line-height: 1.4;
+  }
+
+ /*proyectos */ 
+
+ .projects {
+    max-width: 90rem;
+    margin: 3rem auto;
+    padding: 0 2rem 4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f0e6ff;
+  }
+
+  .projects__title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 2.5rem;
+    background: linear-gradient(90deg, #ff00f7, #5afff6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+  }
+
+  .projects__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+
+  .project-card {
+    position: relative;
+    background: #1a002b;
+    border-radius: 1rem;
+    box-shadow:
+      0 0 7px #ff00f7aa,
+      inset 0 0 10px #5afff6bb;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    min-height: 380px;
+  }
+
+  .project-card:hover {
+    transform: translateY(-0.3rem);
+  }
+
+  .project-card__image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    filter: drop-shadow(0 0 5px #ff00f7);
+  }
+
+  .project-card__footer {
+    padding: 1rem 1.2rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.3rem;
+  }
+
+  .project-card__name {
+    font-weight: 900;
+    font-size: 1.3rem;
+    background: linear-gradient(90deg, #ff00f7, #5afff6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.4rem;
+  }
+
+  .project-card__desc--short {
+    font-size: 1rem;
+    color: #e0d8ffcc;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .project-card__tech {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  .project-card__tech-icon {
+    width: 1.8rem;
+    height: 1.8rem;
+    filter: drop-shadow(0 0 4px #ff00f7);
+  }
+
+  .project-card__tech-text {
+    font-weight: 700;
+    font-size: 1rem;
+    color: #f0e6ff;
+  }
+
+  /* Overlay (hidden by default) */
+  .project-card__overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(31, 0, 46, 0.95);
+    color: #f0e6ff;
+    border-radius: 1rem;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    box-shadow:
+      0 0 7px #ff00f7,
+      inset 0 0 10px #5afff6;
+  }
+
+  .project-card:hover .project-card__overlay {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .project-card__desc--full {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+
+  .project-card__buttons {
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+  }
+
+  .btn {
+    flex: 1;
+    max-width: 140px;
+    padding: 0.6rem 1.6rem;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 30px;
+    border: 2px solid #ff00f7;
+    color: #ff00f7;
+    background: transparent;
+    cursor: pointer;
+    box-shadow:
+      0 0 3px #ff00f7,
+      0 0 5px #5afff6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    user-select: none;
+  }
+
+  .btn:hover {
+    background-color: #ff00f7;
+    color: #1a002b;
+    box-shadow:
+      0 0 2px #ff00f7,
+      0 0 5px #5afff6;
+  }
+
+  .btn--details {
+    border-color: #5afff6;
+    color: #5afff6;
+	background-color: #00eaff;
+    box-shadow:
+      0 0 5px #5afff6,
+      0 0 10px #ff00f7;
+  }
+
+  .btn--details:hover {
+    background-color: #5afff6;
+    color: #1a002b;
+    box-shadow:
+      0 0 5px #5afff6,
+      0 0 5px #ff00f7;
+  }
+
+  .blog {
+    max-width: 100%;
+    padding: 0 2rem 4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background: #1a002b;
+
+
+  }
+
+  .blog__title {
+	margin:0rem;
+    font-size: 2.5rem;
+    font-weight: 900;
+    background: linear-gradient(90deg, #ff00f7, #5afff6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+  }
+
+  .blog__grid {
+	padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+
+  .blog-card {
+    position: relative;
+    background: #1a002b;
+    border-radius: 1rem;
+    box-shadow:
+      0 0 10px #ff00f7aa,
+      inset 0 0 15px #5afff6bb;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    min-height: 350px;
+  }
+
+  .blog-card:hover {
+    transform: translateY(-0.3rem);
+  }
+
+  .blog-card__image {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    filter: drop-shadow(0 0 5px #ff00f7);
+  }
+
+  .blog-card__footer {
+    padding: 1rem 1.2rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.3rem;
+  }
+
+  .blog-card__title {
+    font-weight: 900;
+    font-size: 1.3rem;
+    background: linear-gradient(90deg, #ff00f7, #5afff6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.4rem;
+  }
+
+  .blog-card__summary--short {
+    font-size: 1rem;
+    color: #e0d8ffcc;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .blog-card__category {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  .blog-card__category-icon {
+    width: 1.8rem;
+    height: 1.8rem;
+    filter: drop-shadow(0 0 4px #ff00f7);
+  }
+
+  .blog-card__category-text {
+    font-weight: 700;
+    font-size: 1rem;
+    color: #f0e6ff;
+  }
+
+  /* Overlay */
+  .blog-card__overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(31, 0, 46, 0.95);
+    color: #f0e6ff;
+    border-radius: 1rem;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    box-shadow:
+      0 0 7px #ff00f7,
+      inset 0 0 10px #5afff6;
+  }
+
+  .blog-card:hover .blog-card__overlay {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .blog-card__summary--full {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+
+  .blog-card__buttons {
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+  }
+
+  .btn {
+    flex: 1;
+    max-width: 140px;
+    padding: 0.6rem 1.6rem;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 30px;
+    border: 2px solid #ff00f7;
+    color: #ff00f7;
+    background: transparent;
+    cursor: pointer;
+    box-shadow:
+      0 0 8px #ff00f7,
+      0 0 20px #5afff6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    user-select: none;
+  }
+
+  .btn:hover {
+    background-color: #ff00f7;
+    color: #1a002b;
+    box-shadow:
+      0 0 15px #ff00f7,
+      0 0 30px #5afff6;
+  }
+
+  .btn--share {
+    border-color: #5afff6;
+    color: #5afff6;
+    box-shadow:
+      0 0 8px #5afff6,
+      0 0 20px #ff00f7;
+  }
+
+  .btn--share:hover {
+    background-color: #5afff6;
+    color: #1a002b;
+    box-shadow:
+      0 0 15px #5afff6,
+      0 0 30px #ff00f7;
+  }
+
+
+  .contact {
+    max-width: 100%;
+    color: #f0e6ff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: #1a002b;
+
+  }
+
+  .contact__title {
+	margin: 0rem;
+    font-size: 2.8rem;
+    font-weight: 900;
+    text-align: center;
+
+
+
+  }
+
+  /* Contenedor con fondo degradado neón */
+  .contact__box {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 2rem 3rem;
+	background-color: #1a002b;
+
+  }
+
+  /* Formulario */
+  .contact__form {
+    flex: 1 1 350px;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    background: rgba(26, 0, 43, 0.85);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow:
+      0 0 10px #ff00f7aa,
+      inset 0 0 6px #5afff6bb;
+  }
+
+  .contact__label {
+    font-weight: 700;
+    font-size: 1rem;
+    color: #ff00f7;
+  }
+
+  .contact__input,
+  .contact__textarea {
+    background: #2e0047;
+    border: none;
+    border-radius: 8px;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    color: #e0d8ff;
+    box-shadow: inset 0 0 5px #5afff6;
+    transition: box-shadow 0.3s ease;
+  }
+
+  .contact__input:focus,
+  .contact__textarea:focus {
+    outline: none;
+    box-shadow:
+      0 0 8px #ff00f7,
+      0 0 15px #5afff6;
+  }
+
+  .btn--send {
+    margin-top: 1rem;
+    padding: 0.8rem 1.6rem;
+    font-weight: 900;
+    font-size: 1.2rem;
+    color: #1a002b;
+    background: #ff00f7;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow:
+      0 0 5px #ff00f7,
+      0 0 10px #5afff6;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn--send:hover {
+    background: #5afff6;
+    color: #1a002b;
+    box-shadow:
+      0 0 5px #5afff6,
+      0 0 10px #ff00f7;
+  }
+
+  /* Redes sociales */
+  .contact__social {
+    flex: 1 1 220px;
+    max-width: 280px;
+    background: rgba(26, 0, 43, 0.85);
+    border-radius: 1rem;
+    padding: 2rem 1.5rem;
+    box-shadow:
+      0 0 25px #ff00f7aa,
+      inset 0 0 15px #5afff6bb;
+  }
+
+  .contact__social-title {
+    font-weight: 900;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(90deg, #ff00f7, #5afff6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+  }
+
+  .contact__social-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .contact__social-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #ff00f7;
+    text-decoration: none;
+    box-shadow:
+      0 0 3px #ff00f7,
+      0 0 6px #5afff6;
+    padding: 0.6rem 1rem;
+    border-radius: 10px;
+    transition: color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .contact__social-link:hover {
+    color: #5afff6;
+    box-shadow:
+      0 0 15px #5afff6,
+      0 0 30px #ff00f7;
+  }
+
+  .contact__social-icon {
+    width: 24px;
+    height: 24px;
+    filter: drop-shadow(0 0 4px #ff00f7);
+  }
+
+
+
+  /* Responsive */
+  @media (max-width: 480px) {
+    .skills-section,
+    .education-section {
+      max-width: 90vw;
+      margin: 2rem auto;
+      padding: 1rem 1.5rem;
+    }
+  }
+
+		
+/* Responsive */
+@media (max-width: 768px) {
+	.about__container {
+	flex-direction: column;
+	text-align: center;
+	}
+	.about__image-wrapper {
+	margin-bottom: 2rem;
+	}
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+	.showcase__container {
+	flex-direction: column;
+	text-align: center;
+	}
+	.showcase__text {
+	flex: 1 1 100%;
+	}
+	.showcase__image-wrapper {
+	margin-top: 2rem;
+	}
+}
+
+/* Responsive */
+		@media (max-width: 768px) {
+	.about__container {
+	flex-direction: column;
+	text-align: center;
+	}
+	.about__image-wrapper {
+	margin-bottom: 2rem;
+	}
+} 
+
+/* Responsive: menos columnas en pantallas pequeñas */
+@media (max-width: 900px) {
+	.skills__grid {
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1.5rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.skills__grid {
+	grid-template-columns: 1fr;
+	gap: 1rem;
+	}
+}
+
+@media (max-width: 768px) {
+    .education-experience__container {
+      flex-direction: column;
+    }
+
+    .education-experience__education,
+    .education-experience__experience {
+      flex: 1 1 100%;
+    }
+  }
+
+  /* Responsive */
+  @media (max-width: 900px) {
+    .blog__grid {
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+  }
+
+  @media (max-width: 600px) {
+    .blog__grid {
+      grid-template-columns: 1fr;
+    }
+
+    .blog-card__summary--short {
+      white-space: normal;
+    }
+  }
+
+
+  /* Responsive */
+  @media (max-width: 900px) {
+    .contact__box {
+      flex-direction: column;
+      align-items: center;
+      padding: 1.5rem 1rem;
+    }
+
+    .contact__form,
+    .contact__social {
+      max-width: 100%;
+      flex: none;
+      width: 100%;
+    }
+  }
+</style>
+	  
+
 </Layout>
